@@ -9,7 +9,7 @@
     ansible.builtin.debug:
       msg: "Hello {{ course }} and this is {{ duration }} long"
 
-  - name: print course information
+  - name: print course related
     vars:
       course: ansible
       duration: 120 hours
