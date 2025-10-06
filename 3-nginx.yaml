@@ -1,0 +1,11 @@
+- name: install nginx
+  hosts: local
+  become: yes
+  connections: local
+  tasks:
+  - name: install nginx server
+    ansible.builtin.pacakages:
+    - name: nginx
+      status: present
+
+  
