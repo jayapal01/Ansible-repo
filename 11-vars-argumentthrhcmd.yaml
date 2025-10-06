@@ -5,3 +5,6 @@
   - name: print course details
     ansible.builtin.debug:
       msg: "print the course name is {{ course }} and its long is {{ duration }}"
+
+  # ansible-playbook -i inventory.ini 11-vars-argumentthrhcmd.yaml -e "course=dev duration=10hrs" this need torun in cmd
+    
