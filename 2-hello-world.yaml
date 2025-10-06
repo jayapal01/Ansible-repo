@@ -1,5 +1,4 @@
 - name: print hello world
-  hosts: web
   hosts: local
   connection: local
   tasks:
