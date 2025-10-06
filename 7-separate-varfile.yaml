@@ -1,7 +1,7 @@
 - name: checking the variables inside task
   hosts: local
   connection: local
-  vars-files:
+  vars_files:
   - course.yaml
   tasks:
   - name: print course information
