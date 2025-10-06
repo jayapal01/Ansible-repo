@@ -4,7 +4,7 @@
   vars_prompt:
   - name: username
     prompt: enter username
-    private: false
+    private: false           # hide details while entering into prompt.
 
   - name: password
     prompt: enter the password
