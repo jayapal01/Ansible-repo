@@ -6,5 +6,5 @@
     vars:
       course: Ansible
       duration: 10 hours
-    ansible.bultin.debug:
+    ansible.builtin.debug:
       msg:"Hello {{ course }} and this is {{ duration }} long"
