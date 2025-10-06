@@ -7,4 +7,4 @@
       course: Ansible
       duration: 10 hours
     ansible.builtin.debug:
-      msg:"Hello {{ course }} and this is {{ duration }} long"
+      msg: "Hello {{ course }} and this is {{ duration }} long"
