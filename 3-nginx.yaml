@@ -4,8 +4,6 @@
   connections: local
   tasks:
   - name: install nginx server
-    ansible.builtin.pacakages:
+    ansible.builtin.pacakage:
       name: nginx
       status: present
-
-  
