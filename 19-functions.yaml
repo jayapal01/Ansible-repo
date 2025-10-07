@@ -2,8 +2,16 @@
   hosts: local
   connection: local
   vars:
-    Person: jay
+    Person: Jayapal Reddy
   tasks:
   - name: checking person
     ansible.builtin.debug:
       msg: "Hello {{ Person | default ('Ramesh') }}"
+
+  - name: checking person
+    ansible.builtin.debug:
+      msg: "Hello {{ Person | upper }}"
+
+  - name: checking person
+    ansible.builtin.debug:
+      msg: "Hello {{ Person | lower }}"
