@@ -17,7 +17,7 @@
       msg: "Hello {{ Person | lower }}"  # lower case
 
   - name: Check if 192.168.1.250 is a valid IPv4 address
-  ansible.builtin.set_fact:
-    data: "{{ '192.168.1.250' is ansible.utils.ipv4 }}"
+    ansible.builtin.set_fact:
+      data: "{{ '192.168.1.250' is ansible.utils.ipv4 }}"
 
   
