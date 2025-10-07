@@ -2,7 +2,7 @@
   hosts: local
   connection: local
   vars:
-    person: jay
+    Person: jay
   tasks:
   - name: checking person
     ansible.builtin.debug:
