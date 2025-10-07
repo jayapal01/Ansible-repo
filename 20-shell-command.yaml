@@ -4,4 +4,7 @@
   tasks:
   - name: redirect ls output to a file
     ansible.builtin.command: "ls -ltr > /tmp/output.txt"
-    
+     # throws error  command but when i give shell in place of command it works  and shell gets full environment.
+
+  - name: redirect ls output to a file
+    ansible.builtin.shell: "ls -ltr > /tmp/output.txt"   
