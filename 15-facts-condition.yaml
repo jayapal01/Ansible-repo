@@ -1,6 +1,6 @@
 - name: play book control facts checking
   hosts: local
-  connections: local
+  connection: local
   become: yes
   tasks:
   - name: install nginx if this redhat
