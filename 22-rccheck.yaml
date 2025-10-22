@@ -9,7 +9,7 @@
     ansible.builtin.package:
       name: nginx
       state: present
-      register: output
+    register: output
    
   - name: check the output
     ansible.builtin.debug: 
