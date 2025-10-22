@@ -2,13 +2,14 @@
   hosts: local
   become: yes
   connection: local
+  tags:
+  - check
   tasks:
   - name: install nginx server
     ansible.builtin.package:
       name: nginx
       state: present
-    tags:
-    - check
+   
 
   - name: start nginx server
     ansible.builtin.service:
