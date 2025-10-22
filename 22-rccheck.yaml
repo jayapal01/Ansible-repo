@@ -12,11 +12,13 @@
       register: output
    
   - name: check the output
-    ansible.builtin.debug: "nginxis already installed"
+    ansible.builtin.debug: 
+      msg: "nginxis already installed"
     when: output.rc == 0
 
   - name: check the output
-    ansible.builtin.debug: "nginxis installing now"
+    ansible.builtin.debug: 
+      msg: "nginxis installing now"
     when: output.rc != 0
 
 
