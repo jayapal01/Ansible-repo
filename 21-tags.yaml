@@ -7,6 +7,8 @@
     ansible.builtin.package:
       name: nginx
       state: present
+      tags:
+      - check
 
   - name: start nginx server
     ansible.builtin.service:
