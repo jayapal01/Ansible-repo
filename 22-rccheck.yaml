@@ -14,12 +14,12 @@
   - name: check the output
     ansible.builtin.debug: 
       msg: "nginxis already installed"
-    when: output.rc == 0
+    when: not output.changed
 
   - name: check the output
     ansible.builtin.debug: 
       msg: "nginxis installing now"
-    when: output.rc != 0
+    when: output.changed
 
 
 
