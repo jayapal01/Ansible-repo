@@ -2,8 +2,8 @@
   hosts: local
   connection: local
   vars:
-  - db_user: "{{ lookup('aws_ssm','dbusername','region=us-east-1') }}"
-  - db_password: "{{ lookup('aws_ssm','dbpassword','region=us-east-1') }}"
+  - db_user: "{{ lookup('aws_ssm','/dbusername','region=us-east-1') }}"
+  - db_password: "{{ lookup('aws_ssm','/dbpassword','region=us-east-1') }}"
   
   tasks:
   - name: hello from play2 and task 1
